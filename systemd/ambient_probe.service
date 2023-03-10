@@ -1,0 +1,10 @@
+[Unit]
+Description=Ambient Prober
+After=network.target
+[Service]
+User=node_exporter
+Group=node_exporter
+Type=simple
+ExecStart=/usr/local/bin/ambientprobe
+[Install]
+WantedBy=multi-user.target
