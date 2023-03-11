@@ -50,7 +50,7 @@ func main() {
 			ambientPressure.Set(p)
 			ambientHumidity.Set(h)
 			// fmt.Printf("Temp: %fC, Press: %fhPa, Hum: %f%%\n", t, p, h)
-			time.Sleep(5 * time.Second)
+			time.Sleep(15 * time.Second)
 		}
 	}()
 
