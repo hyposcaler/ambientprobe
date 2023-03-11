@@ -1,10 +1,11 @@
 # ambientprobe
 
-A simple prometheus exporter for a BME280 temperature/humidity/pressure sensor attached to a Raspberry pi.
+A simple prometheus exporter for a [BME280](https://www.waveshare.com/wiki/BME280_Environmental_Sensor) temperature/humidity/pressure sensor attached to a Raspberry pi.
 
-the systemd folder contains a service unit for the app
+The systemd folder contains a systemd service unit for the app
 
-the grafana folder contains a dashboard for the data
+The scrape point is exposed on port 2323 as `/metrics`
 
-The /metrics scrape point is exposed on port 2323
+The grafana folder contains a dashboard for the data
 
+![Screen-capture showing a sample dashboard](docs/dashboard-screenshot.png "Screenshot")
